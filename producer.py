@@ -6,7 +6,7 @@ from aws import AWS
 
 load_dotenv()
 aws = AWS()
-file_name = 'audio2.mp3'
+file_name = 'audio.mp3'
 
 s3_client = boto3.client('s3', region_name=aws.region)
 sqs_client = boto3.client('sqs', region_name=aws.region)
